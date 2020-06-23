@@ -2,8 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SnackbarWidget extends StatelessWidget {
-  final String title;
-  SnackbarWidget({Key key, @required this.title}) : super(key: key);
+  final String title, label;
+  SnackbarWidget({Key key, @required this.title, @required this.label})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +14,7 @@ class SnackbarWidget extends StatelessWidget {
           final SnackBar snackBar = SnackBar(
             content: Text(title),
             action: SnackBarAction(
-              label: 'Undo',
+              label: label,
               onPressed: () {
                 // Some code to undo the change.
               },

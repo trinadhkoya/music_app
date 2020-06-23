@@ -43,7 +43,8 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               'You have pushed the button this many times:',
             ),
-            SnackbarWidget(title: 'Uh oh! passed parameter dynamically')
+            SnackbarWidget(
+                title: 'Uh oh! passed parameter dynamically', label: 'UNDO')
           ],
         ),
       ),
